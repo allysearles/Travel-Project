@@ -1,8 +1,71 @@
-#hero-title {
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+body {
 	font-family: Poppins;
+}
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../Images/south-beach-miami-ocean-drive-neon-1920x550.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: whitesmoke;
+	text-align: center;
+	padding: 260px 0;
+}
+#hero-heading-one {
+	color: #fff;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+	letter-spacing: 5px;
+	margin: 0;
+}
+#hero-heading-two {
+	color: var(--light, #fff);
 	font-size: 96px;
+	font-style: normal;
 	font-weight: 700;
-	line-height: 144px;
-	letter-spacing: 0em;
-	text-align: left;
+	line-height: normal;
+	margin: 0;
+}
+#hero-heading-three {
+	color: var(--light, #fff);
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0;
+}
+header a {
+	color: var(--dark, #272044);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: white;
+	color: #272844;
+	padding: 16px 32px;
+	display: inline-block;
+	margin-top: 32px;
+}
+@media (max-width: 900px) {
+	header {
+		padding: 60px 0;
+	}
+	#hero-heading-one {
+		font-size: 20px;
+	}
+	#hero-heading-two {
+		font-size: 48px;
+	}
+	#hero-heading-three {
+		font-size: 24px;
+	}
 }
