@@ -1,11 +1,18 @@
+body {
+	font-family: Poppins;
+}
 .container {
 	max-width: 1400px;
 	margin: 0 auto;
 }
-body {
-	font-family: Poppins;
+section {
+	max-width: 1200px;
+	margin: 0 auto;
 }
-
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+}
 header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 		url("../Images/south-beach-miami-ocean-drive-neon-1920x550.jpg");
@@ -55,7 +62,56 @@ header a {
 	display: inline-block;
 	margin-top: 32px;
 }
-@media (max-width: 900px) {
+footer {
+	color: white;
+	background-image: linear-gradient(
+			rgba(39, 32, 68, 0.95),
+			rgba(39, 32, 68, 0.95)
+		),
+		url("../Images/footer-image-four.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 100px 0;
+}
+.footer-heading {
+	color: var(--light, #fff);
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin-right: 28px;
+	margin-left: 28px;
+}
+.footer-description {
+	color: var(--light, #fff);
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	opacity: 0.6;
+	margin-right: 28px;
+	margin-left: 28px;
+}
+footer ul {
+	padding: 0;
+}
+footer li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+footer a {
+	color: white;
+	opacity: 0.6;
+}
+#signature {
+	text-align: center;
+	padding-top: 80px;
+}
+@media (max-width: 960px) {
 	header {
 		padding: 60px 0;
 	}
