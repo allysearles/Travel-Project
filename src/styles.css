@@ -8,9 +8,16 @@ body {
 section {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 100px 0;
 }
 .grid {
 	display: grid;
+	grid-gap: 64px;
+}
+.grid-2-columns {
+	grid-template-columns: 1fr 1fr;
+}
+.grid-1x-narrow-2x-columns {
 	grid-template-columns: 1fr 2fr 2fr;
 }
 header {
@@ -62,6 +69,45 @@ header a {
 	display: inline-block;
 	margin-top: 32px;
 }
+main {
+	background-color: white;
+}
+
+#section-one-image {
+	max-width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: -10px;
+	padding-top: 70px;
+}
+#section-one-title {
+	color: var(--dark, #272044);
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 5px;
+	opacity: 0.3;
+}
+#section-one-heading {
+	color: var(--dark, #272044);
+	font-family: Poppins;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 50px;
+	margin: 0;
+}
+.section-one-description {
+	color: var(--dark, #272044);
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	opacity: 0.7;
+}
 footer {
 	color: white;
 	background-image: linear-gradient(
@@ -81,8 +127,6 @@ footer {
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
-	margin-right: 28px;
-	margin-left: 28px;
 }
 .footer-description {
 	color: var(--light, #fff);
@@ -92,8 +136,6 @@ footer {
 	font-weight: 400;
 	line-height: normal;
 	opacity: 0.6;
-	margin-right: 28px;
-	margin-left: 28px;
 }
 footer ul {
 	padding: 0;
@@ -109,19 +151,50 @@ footer a {
 }
 #signature {
 	text-align: center;
-	padding-top: 80px;
 }
 @media (max-width: 960px) {
 	header {
 		padding: 60px 0;
 	}
 	#hero-heading-one {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	#hero-heading-two {
 		font-size: 48px;
 	}
 	#hero-heading-three {
-		font-size: 24px;
+		font-size: 22px;
+		padding-top: 2px;
+	}
+	.grid {
+		grid-template-columns: 1fr;
+		grid-gap: 32px;
+	}
+	section {
+		max-width: 100%;
+		padding: 50px;
+	}
+	#section-one-image {
+		max-width: 100%;
+		width: 300px;
+		padding-top: 10px;
+		opacity: 0.6;
+		justify-content: center;
+		align-items: center;
+	}
+	#section-one {
+		text-align: center;
+	}
+	#section-one-title {
+		font-size: 18px;
+	}
+	#section-one-heading {
+		font-size: 26px;
+		line-height: 40px;
+	}
+
+	footer {
+		text-align: center;
+		padding: 50px;
 	}
 }
