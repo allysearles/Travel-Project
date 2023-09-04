@@ -145,6 +145,13 @@ main {
 .card-body {
 	padding: 30px;
 }
+.card-image-header.grid {
+	grid-gap: 0;
+}
+.card-embed-map {
+	width: 100%;
+	aspect-ratio: 1/1;
+}
 .card-location-header {
 	color: var(--dark, #272044);
 	font-family: Poppins;
@@ -194,8 +201,8 @@ main {
 	letter-spacing: 3px;
 	text-transform: uppercase;
 }
-.section-two-card-one-image {
-	max-width: 100%;
+.section-two-card-image {
+	width: 100%;
 	display: block;
 }
 
@@ -292,10 +299,15 @@ footer a {
 	#section-two-heading {
 		font-size: 26px;
 	}
+	.card-image-header img {
+		display: none;
+	}
 	.card-location-header {
 		font-size: 22px;
 	}
-
+	.card-embed-map {
+		aspect-ratio: 16/9;
+	}
 	footer {
 		text-align: center;
 		padding: 50px;
